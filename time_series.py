@@ -1,6 +1,7 @@
 class TimeSeries(object):
 	"this is a string object."
 	"this a new branch with dictionary."
+	"this is a reviewed with a brand new branch attached."
     def __init__(self, data):
         self.data = data
     
