@@ -42,6 +42,7 @@ class LinearTimeSeries(TimeSeries):
         self.data.sort()
     
     def get(self, x):
+	'''This is a function that retrieves a linearly interpolated y value for a given x value'''
         # if it's out of range to the left,
         # return the first value
         if x < self.data[0][0]:
