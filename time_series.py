@@ -1,4 +1,5 @@
 class TimeSeries(object):
+	"this is a string object."
     def __init__(self, data):
         self.data = data
     
@@ -14,6 +15,7 @@ class TimeSeries(object):
     
 
 class StepFunctionTimeSeries(TimeSeries):
+	"this is a stepfunction for time series."
     def get(self, x):
         '''Given an X value, get the corresponding Y value.
         
@@ -32,6 +34,7 @@ class StepFunctionTimeSeries(TimeSeries):
 
 
 class LinearTimeSeries(TimeSeries):
+	"this is a linear time series."
     def __init__(self, data):
         TimeSeries.__init__(self, data)
         self.data.sort()
